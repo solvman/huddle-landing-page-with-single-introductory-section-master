@@ -7,18 +7,21 @@
       src="https://kit.fontawesome.com/798ce98841.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
   </head>
   <body>
-    <header>
-      <img src="./images/logo.svg" alt="Huddle logo" />
+    <header class="wrapper">
+      <img class="logo" src="./images/logo.svg" alt="Huddle logo" />
     </header>
-    <main>
+    <main class="wrapper">
       <img src="./images/illustration-mockups.svg" alt="Illustration mockups" />
       <section class="hero">
-        <h1 class="hero__title">Build The Community Your Fans Will Love</h1>
+        <h1 class="hero__title">
+          Build The Community<br />Your Fans Will Love
+        </h1>
         <p class="hero__text">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
@@ -27,10 +30,18 @@
         <button class="button">Register</button>
       </section>
     </main>
-    <footer>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
+    <footer class="wrapper">
+      <ul class="socials">
+        <li>
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
