@@ -76,13 +76,12 @@ header {
 }
 
 .logo {
-  width: min(32vw, 264px);
+  width: min(32vw, 200px);
   min-width: 120px;
 }
 
 main > img {
-  margin-top: 4.3625rem;
-  margin-bottom: 3.75rem;
+  margin: 4.3625rem auto 3.75rem;
 }
 
 .hero__title {
@@ -113,6 +112,7 @@ main > img {
 footer {
   padding: 2.5rem 0;
 }
+
 .socials {
   display: flex;
   justify-content: center;
@@ -138,4 +138,52 @@ footer {
   border-color: var(--color-primary-300);
   box-shadow: var(--box-shadow);
   transform: scale(1.3);
+}
+
+@media (min-width: 750px) {
+  body {
+    height: max(100vh, 750px);
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 54% 46%;
+    align-items: center;
+    text-align: left;
+    gap: 3.6875rem;
+    font-size: var(--font-size-body-lg);
+  }
+
+  main > img {
+    margin: 6.5rem 0 0;
+  }
+
+  .button {
+    height: 56px;
+    font-size: var(--font-size-body-md);
+    border-radius: 1.75rem;
+  }
+
+  footer {
+    padding: 1.5rem 0;
+  }
+
+  .socials {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .socials a {
+    font-size: var(--font-size-body-lg);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero__title {
+    font-size: var(--font-size-heading-lg);
+  }
 }
